@@ -15,13 +15,13 @@ def browser_init(context):
     :param test_name: scenario.name
     """
     ####### GOOGLE CHROME ######################
-    service = Service(executable_path="/Users/priscillao/QA/Bola Project/chromedriver")
+    service = Service(executable_path="/Users/priscillao/QA-automation-Projects/Bola Project/chromedriver")
     options = webdriver.ChromeOptions()
     context.driver = webdriver.Chrome(service=service, options=options)
     ############################################
 
     ######## HEADLESS MODE ########################
-    # service = Service(executable_path=r'C/Users/priscillao/QA/Bola Project/chromedriver')
+    # service = Service(executable_path=r'C/Users/priscillao/QA-automation-Projects/Bola Project/chromedriver')
     # options = webdriver.ChromeOptions()
     # options.add_argument('--headless')
     # options.add_argument('--window-size=1920,1080')
@@ -30,7 +30,7 @@ def browser_init(context):
 
     ##################### FIREFOX #########################
     # driver_path = GeckoDriverManager().install()
-    # service = FirefoxService(executable_path='/Users/priscillao/QA/Bola Project/geckodriver')
+    # service = FirefoxService(executable_path='/Users/priscillao/QA-automation-Projects/Bola Project/geckodriver')
     # options = webdriver.FirefoxOptions()
     # context.driver = webdriver.Firefox(service=service,options=options)
     ########################################################
